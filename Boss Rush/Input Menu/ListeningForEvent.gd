@@ -8,7 +8,12 @@ func _ready() -> void:
 func _input(event: InputEvent) -> void:
 	if not event.is_pressed():
 		return
-	emit_signal("key_selected", event.scancode)
+	if event is InputEventMouseButton:
+		#if true, the game crashes. if emitted as a scancode, the command doesn't work
+		#Don't know what to do but current implementation is good enough
+		pass
+	else:
+		emit_signal("key_selected", event.scancode)
 	close()
 	
 func open() -> void:

@@ -1,4 +1,5 @@
-extends Command
+extends Reference
+class_name AttackCommand
 
-func _execute():
-	pass
+var task_name:String
+var mouse_direction:Vector2

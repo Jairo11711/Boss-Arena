@@ -6,7 +6,8 @@ var profile_default = {
 	'move_up': KEY_W,
 	'move_down': KEY_S,
 	'move_left': KEY_A,
-	'move_right': KEY_D
+	'move_right': KEY_D,
+	'Roll' : KEY_SPACE
 }
 
 var profile_custom = profile_default
